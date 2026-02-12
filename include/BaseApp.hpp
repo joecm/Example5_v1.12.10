@@ -35,7 +35,7 @@ class BaseApp : public OgreBites::ApplicationContext, public OgreBites::InputLis
             mNodeCam = mScnMgr->getRootSceneNode()->createChildSceneNode("CameraNode");
             mNodeCam->setPosition(0.0F, 0.0F, 500.0F);
             mNodeCam->attachObject(mCam);
-            mCam->lookAt(Ogre::Vector3(0.0F, 0.0F, -300.0F));
+            mCam->lookAt(Ogre::Vector3(5.0F, 5.0F, -300.0F));
             mCam->setNearClipDistance(5.0F);
             getRenderWindow()->addViewport(mCam);
             // 7) Create your scene here :)
